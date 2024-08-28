@@ -1,0 +1,147 @@
+@font-face {
+  font-family: principalMedium;
+  src: url(fonts/Moon_Dance_Outfit/Outfit/static/Outfit-Light.ttf);
+}
+* {
+  color: white;
+  font-family: "principalMedium";
+}
+
+body {
+  background-color: #121212;
+}
+
+#logo {
+  height: 60px;
+}
+
+.navbar-brand {
+  animation-name: logoSlide;
+  animation-duration: 2s;
+}
+
+@keyframes logoSlide {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+#navbar-div {
+  background-color: #121212;
+  border-bottom: 1px solid #777575;
+}
+#navbar-div #navbarSupportedContent {
+  flex-grow: 0;
+}
+#navbar-div #navbarSupportedContent > ul {
+  justify-content: center;
+  animation-name: menuSlide;
+  animation-duration: 1s;
+}
+#navbar-div #navbarSupportedContent > ul li {
+  margin-left: 20px;
+  height: auto;
+}
+#navbar-div #navbarSupportedContent > ul li:hover {
+  border-bottom: 1px solid white;
+}
+
+@keyframes menuSlide {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#flyer {
+  padding: 0px;
+  height: 400px;
+  overflow: hidden;
+  background-color: black;
+  box-shadow: 0px -6px 26px white;
+}
+#flyer img {
+  position: relative;
+  top: -70%;
+  left: 56%;
+  width: 75%;
+  border-radius: 999px;
+  animation: moveImage 7s linear;
+  transform: rotateZ(90deg);
+  z-index: 10;
+}
+#flyer #mensaje-flyer {
+  margin-top: 5%;
+  margin-left: 5%;
+  z-index: 99999999;
+}
+#flyer #mensaje-flyer h1 {
+  text-align: center;
+}
+#flyer #mensaje-flyer p {
+  text-align: center;
+}
+#flyer #mensaje-flyer button {
+  margin: 0px auto;
+  display: block;
+}
+
+@keyframes moveImage {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(90deg);
+  }
+}
+#cont-principal {
+  height: auto;
+  background-color: #060606;
+  padding: 10px;
+}
+#cont-principal h1 {
+  text-align: center;
+}
+#cont-principal .card {
+  background-color: transparent;
+  padding: 13px;
+  box-shadow: 0px 0px 8px #3131ff;
+}
+#cont-principal .card .card-body a {
+  color: white;
+  border: 1px solid #022873;
+}
+#cont-principal .card .card-body a:hover {
+  box-shadow: 0px 0px 5px inset #022873;
+}
+
+#aside h2 {
+  text-align: center;
+  margin: 25px 0 25px 0;
+}
+#aside .redes .icon {
+  height: 75px;
+  margin-top: 20px;
+}
+
+@media (max-width: 576px) {
+  #flyer img {
+    position: relative;
+    top: 5%;
+    left: 15%;
+    width: 75%;
+    animation: moveImage 7s linear;
+    transform: rotateZ(90deg);
+    z-index: 10;
+  }
+}
+@media (max-width: 361px) {
+  #logo {
+    margin: 0px;
+  }
+}
+
+/*# sourceMappingURL=style-index.css.map */

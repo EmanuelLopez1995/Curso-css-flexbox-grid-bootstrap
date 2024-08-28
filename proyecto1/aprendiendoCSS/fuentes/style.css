@@ -1,0 +1,19 @@
+@font-face {
+    font-family: UnaFuenteDescargada;
+    src: url(Fonts/Moon_Dance/MoonDance-Regular.ttf);
+}
+
+h1{
+    font-family: 'Moon Dance', cursive;
+}
+
+h3{
+    font-family: "UnaFuenteDescargada";
+}
+
+p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* colores */
+

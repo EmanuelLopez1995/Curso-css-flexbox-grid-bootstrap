@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style-index.css">
+  <title>Sistema WEB con Bootstrap</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- Navbar -->
+    <div class="row">
+      <nav id="navbar-div" class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mx-sm-5" href="#">
+            <img id="logo" src="img/logo-loomine.jpeg" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Páginas WEB</a></li>
+                  <li><a class="dropdown-item" href="#">Sistemas WEB</a></li>
+                  <li><a class="dropdown-item" href="#">Sistemas de escritorio</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Fin de Navbar -->
+
+    <!-- Inicio de flyer -->
+    <div class="row">
+      <div id="flyer" class="col-12 ">
+        <div id="mensaje-flyer" class="col-11 col-sm-5">
+          <h1>Llegó la hora</h1>
+          <h1>de mostrarte al mundo!</h1>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores repellat aperiam, labore quidem illum
+            distinctio, perspiciatis culpa, odio totam adipisci iure facere. Explicabo, minus rem. Eaque laborum
+            possimus obcaecati inventore.</p>
+          <button type="button" class="btn btn-primary">Ver más</button>
+        </div class="col-sm-5" >
+        <img src="img/pexels-pixabay-247676.jpg" alt="" class="border-rounded">
+      </div>
+    </div>
+    <!-- Fin de flyer -->
+
+    <!-- Contenido principal -->
+
+    <div id="cont-principal" class="row justify-content-around">
+      <div id="portfolios" class="col-8">
+        <h1 class="col-12 my-4 ">Conocé nuestro portfolio</h1>
+        <hr>
+          <div class="row justify-content-around p-4">
+            <div class="card col-auto mt-5" style="width: 16rem;">
+              <img src="img/buildings.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-auto mt-5" style="width: 16rem;">
+              <img src="img/beer.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-auto mt-5" style="width: 16rem;">
+              <img src="img/ropa.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-auto mt-5" style="width: 16rem;">
+              <img src="img/yash.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div id="aside" class="col-3">
+          <h2>Seguinos en...</h2>
+          <div class="row redes justify-content-around">
+              <img class="icon col-auto" src="img/icons/facebook.png" alt="facebook">
+              <img class="icon col-auto" src="img/icons/instagram.png" alt="instagram">
+              <img class="icon col-auto" src="img/icons/youtube.png" alt="youtube">
+          </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin Contenido principal -->
+
+  <script type="text/javascript" src="Jquery/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

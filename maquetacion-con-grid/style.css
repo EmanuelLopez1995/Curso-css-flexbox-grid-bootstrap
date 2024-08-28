@@ -1,0 +1,186 @@
+#website{
+    width: 75%;
+    height: 1000px;
+    margin:0px auto;
+    border:1px solid #ccc;
+    display:grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+}
+
+#website *{
+    margin:0px;
+    padding:0px;
+    text-align: center;
+}
+
+#website #cabecera{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1 / 6;
+    background-color: blue;
+    color:white;
+    text-align: center; 
+}
+
+
+#website #menu{
+    grid-column: 1 / 6;
+    background-color: lightblue;
+    color:black;
+    display:grid;
+    line-height: 70px;
+
+}
+
+#website #menu ul{
+    display:grid;
+    grid-template-columns: repeat(9 , 1fr);
+    list-style: none;
+}
+
+#website #contenido{
+    grid-column: 1 / 5;
+    background-color: #eee;
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 25px;
+    padding:20px;
+}
+
+#website #contenido article{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    border:1px solid #555;
+}
+
+#website #lateral{
+    grid-column: 5 / 6;
+    background-color: orange;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#website #pie-pagina{
+    grid-column: 1 / 6;
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:440px){
+    #contenido{
+        display:flex;
+        flex-direction: column;
+    }
+    #contenido article{
+        height:150px;
+    }
+}
+
+
+
+/* ejercicio con areas */
+
+#website-areas{
+    width: 75%;
+    height: 1000px;
+    margin:0px auto;
+    border:1px solid #ccc;
+    display:grid;
+    grid-template-columns: repeat(5 , 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
+    grid-template-areas: 
+        "cabecera cabecera cabecera cabecera cabecera" /*se pone cabecera 5 veces porque hay 5 columnas */
+        "menu menu menu menu menu"
+        "contenido contenido contenido contenido lateral"
+        "pie pie pie pie pie";
+}
+
+#website-areas *{
+    margin:0px;
+    padding:0px;
+    text-align: center;
+}
+
+#website-areas #cabecera{
+    grid-area: cabecera;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    color:white;
+    text-align: center; 
+}
+
+
+#website-areas #menu{
+    grid-area: menu;
+    background-color: lightblue;
+    color:black;
+    display:grid;
+    line-height: 70px;
+
+}
+
+#website-areas #menu ul{
+    display:grid;
+    grid-template-columns: repeat(9 , 1fr);
+    list-style: none;
+}
+
+#website-areas #contenido{
+    grid-area: contenido;
+    background-color: #eee;
+    display:grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 25px;
+    padding:20px;
+}
+
+#website-areas #contenido article{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    border:1px solid #555;
+}
+
+#website-areas #lateral{
+    grid-area: lateral;
+    background-color: orange;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#website-areas #pie-pagina{
+    grid-area: pie;
+    background-color: black;
+    color:white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width:440px){
+    #contenido{
+        display:flex;
+        flex-direction: column;
+    }
+    #contenido article{
+        height:150px;
+    }
+}

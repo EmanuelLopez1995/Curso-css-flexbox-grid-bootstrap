@@ -1,0 +1,182 @@
+// Variables colores
+
+$color-oscuro: #121212;
+$color-oscurest: #060606;
+$color-azul: #022873;
+$color-rojo: #F20519;
+$color-verde: #09A603;
+$color-amarillo: #F2CB05;
+$color-naranja: #F27405;
+$color-texto-blanco: #f0fff0;
+
+//fuentes
+
+@font-face {
+    font-family: principalMedium;
+    src: url(fonts/Moon_Dance_Outfit/Outfit/static/Outfit-Light.ttf);
+}
+
+
+// Contenido
+
+*{
+    color:white;
+    font-family: "principalMedium";
+}
+
+body{
+    background-color: $color-oscuro;
+}
+
+#logo{
+    height: 60px;
+}
+.navbar-brand{
+    animation-name: logoSlide;
+    animation-duration: 2s;
+}
+
+@keyframes logoSlide {
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+#navbar-div{
+    background-color: $color-oscuro;
+    border-bottom: 1px solid rgb(119, 117, 117);
+    // position:fixed;
+    // z-index:9999;
+    #navbarSupportedContent{
+        flex-grow: 0;     
+        
+    }
+    #navbarSupportedContent > ul{
+        justify-content: center; 
+        animation-name: menuSlide;
+        animation-duration: 1s;
+        li{
+            margin-left: 20px;
+            height:auto;
+        }
+        li:hover{
+            border-bottom: 1px solid white;
+        }
+    }
+}
+
+@keyframes menuSlide {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+#flyer{
+    padding:0px;
+    height:400px;
+    overflow: hidden;
+    background-color: black;
+    box-shadow: 0px -6px 26px white;
+    img{
+        position:relative;
+        top:-70%;
+        left:56%;
+        width: 75%;
+        border-radius: 999px;
+        animation: moveImage 7s linear;
+        transform: rotateZ(90deg);
+        z-index:10;
+        
+
+    }
+    #mensaje-flyer{
+        margin-top: 5%;
+        margin-left:5%;
+        z-index: 99999999;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        button{
+            margin:0px auto;
+            display:block;
+        }
+    }
+
+}
+
+@keyframes moveImage {
+    from{
+        transform: rotateZ(0deg);
+    }to{
+        transform: rotateZ(90deg);
+    }
+}
+
+#cont-principal{
+    height:auto;
+    background-color: $color-oscurest;
+    padding:10px;
+    h1{
+        text-align: center;
+    }
+    .card{
+        background-color: transparent;
+        // border:1px solid $color-texto-blanco;
+        padding:13px;
+        box-shadow: 0px 0px 8px rgb(49, 49, 255);
+        .card-body{
+            a{
+                color:white;
+                border:1px solid $color-azul;
+            }
+            a:hover{
+                box-shadow: 0px 0px 5px inset $color-azul;
+            }
+        }
+    }
+}
+
+#aside{
+    h2{
+        text-align: center;
+        margin: 25px 0 25px 0;
+    }
+    .redes{
+        // display:flex;
+        // justify-content: space-around;
+        .icon{
+            height:75px;
+            margin-top:20px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    #flyer{
+        img{
+            position:relative;
+            top:5%;
+            left:15%;
+            width: 75%;
+            animation: moveImage 7s linear;
+            transform: rotateZ(90deg);
+            z-index:10;
+        }
+    }
+}
+
+@media (max-width: 361px){
+    #logo{
+        margin:0px;
+    }
+}
+

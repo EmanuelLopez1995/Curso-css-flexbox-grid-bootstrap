@@ -1,0 +1,77 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1{
+    background-color: red;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: green;
+}
+
+footer a{
+    color:red;
+}
+
+#descripcion, #titulo{
+    border: 1px solid black;
+    padding: 15px;
+}
+
+#titulo{
+ border:2px dashed white;   
+}
+
+.parrafo{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.parrafo1{
+    background-color: green;
+    color:white;
+    padding:15px;
+}
+
+#usuario form{
+    border:5px solid blue;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#usuario form *{
+    display:block;
+}
+
+input[type="text"]{
+    margin-bottom: 15px;
+    padding: 5px;
+} 
+
+input[type="submit"]{
+    background: green;
+    color:white;
+    padding: 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#menu > li > a{
+    color:red;
+}
+
+/*Se dan prioridad a los que estan mas abajo */
+
+#saludo h1{
+    background-color: brown;
+}
+
+h1{
+    background-color: purple;
+}
+
+

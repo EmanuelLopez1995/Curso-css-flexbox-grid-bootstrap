@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#general{
+    width:1200px;
+    border: 1px solid grey;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+#header{
+    width:100%;
+    height: 100px;
+    background-color: rgba(0, 0, 255, 0.74);
+    color:white;
+    text-align: center;
+    line-height: 90px;
+}
+
+#menu{
+    background-color: #eee;
+}
+
+#menu ul li{
+    display:block;
+    float:left;
+    padding:15px;
+    border-right: 1px solid #ccc;
+}
+
+#menu ul li a{
+    color:#444;
+    display:block;
+    padding: 10px;
+}
+
+#menu ul li:hover a{
+    color:white;
+}
+
+#menu ul li:hover{
+    background:rgba(0, 0, 255, 0.74);
+    cursor:pointer;
+}
+
+.clearfix{
+    float:none;
+    clear:both;
+}
+
+#contenido{
+    width:70%;
+    background-color: skyblue;
+    float:left;
+}
+
+#lateral{
+    width:30%;
+    background-color: rgb(90, 172, 204);
+    float:left;
+    min-height: 800px;
+    text-align: center;
+    max-height: 1000px;
+    overflow-y:scroll;
+}
+
+#contenido .caja{
+    width: 40%;
+    height:250px;
+    background-color: #ccc;
+    float: left;
+    border: 1px solid gray;
+    margin: 20px;
+    margin-left: 40px;
+    text-align: center;
+    line-height: 250px;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 15px black;
+    border-radius: 50px 10px 4px 61px;
+}
+#contenido h1{
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    color: #444;
+    text-shadow: 0px 0px 3px gray;
+}
+
+footer{
+    width:100%;
+    background-color: #ccc;
+    text-align: center;
+    color: #444;
+    height: 55px;
+    line-height: 55px;
+    border-top: 1px solid blue;
+}
+
+.sombra-interior{
+    box-shadow: 5px 5px 10px gray inset !important;
+}
+
+.libre{
+    border:1px solid black;
+    background-color: red;
+    color:white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+    position:absolute;
+    top:0px;
+    left:50%;
+}
+
+.libre2{
+    position: absolute;
+    background-color: green;
+    left:50%;
+    top:80px;
+}
+
+.fija{
+    border:1px solid black;
+    background-color: red;
+    color:white;
+    width: 50px;
+    height: 50px;
+    font-size: 13px;
+    position:fixed;
+    background-color: blue;
+    top:50%;
+}

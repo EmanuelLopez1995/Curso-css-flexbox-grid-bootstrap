@@ -1,0 +1,45 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#layout{
+    height: 100vh;
+    border: 3px solid black;
+    padding: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.caja{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    padding: 20px;
+    border: 4px solid #222;
+    margin:10px;
+    background-color: gray;
+}
+
+.red{
+    align-self: flex-start;
+    background-color: red;
+}
+
+.green{
+    margin-top: 10%;
+    background-color: green;
+}
+
+.orange{
+    align-self: flex-end;
+    background-color: orange;
+}
+
+.blue{
+    align-self: center;
+    background-color: blue;
+}
